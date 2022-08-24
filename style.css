@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    }
+    
+body {
+min-width: 480px;
+min-height: 100vh;
+font-family: 'Arial', sans-serif;
+font-size: 16px;
+color: #fff;
+width: 100%;
+text-align: center;
+background: url("./assets/map.jpg") center/cover, rgba(0, 0, 0, 0.5);
+background-blend-mode: multiply;
+}
+.app{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+/*********                  карты Древнего                     **********/
+.ancients-container{
+display:flex;
+min-width: 600px;
+justify-content: center;
+
+/* flex-wrap:wrap; */
+gap:20px;
+min-width:50%;
+padding:20px;
+}
+.ancient-card{
+background-position:50%;
+background-repeat:no-repeat;
+background-size:contain;
+box-sizing:border-box;
+cursor:pointer;
+height:290px;
+width:230px
+}
+.ancient-card-after{
+border:2px solid red;
+transition: 0.7s;
+}
+/*********                  Сложность                     **********/
+.difficulty-container{
+    display:none;
+    gap:20px;
+    justify-content:center
+}
+.difficulty{
+border:2px solid rgb(122, 128, 0);
+box-sizing:border-box;
+background-color: rgb(211, 197, 180);
+color:purple;
+cursor:pointer;
+padding:5px;
+text-align:center;
+width: 80px;
+}
+.difficulty-active{
+background-color:rgb(98, 90, 90);
+}
+.deck-container{
+border:2px solid rgb(122, 128, 0);
+box-sizing:border-box;
+display: none;
+justify-content:center;
+padding: 10px;
+background-color: rgb(211, 197, 180);
+width: 100px;
+align-items:center;
+color:purple;
+min-width:24.5%;
+text-align:center;
+}
+
+/*********                  Медиа запросы                     **********/
+    @media (max-width: 1020px){
+        .ancient-card{
+            height:220px;
+            width:160px}
+    }
+    @media (max-width: 740px){
+        .ancient-card{
+            height:160px;
+            width:100px}
+    }

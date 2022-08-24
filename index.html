@@ -3,10 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CodeJam</title>
 </head>
 <body>
-    Hello
+    
+    <div class="app">
+        <div class="ancients-container">
+            <div class="ancient-card" id="card"  style="background-image: url('/assets/Ancients/Azathoth.png');" onclick="toggleAncientCard(this)"></div>
+            <div class="ancient-card" id="card" style="background-image: url('/assets/Ancients/Cthulthu.png');" onclick="toggleAncientCard(this)"></div>
+            <div class="ancient-card" id="card" style="background-image: url('/assets/Ancients/IogSothoth.png');" onclick="toggleAncientCard(this)"></div>
+            <div class="ancient-card" id="card" style="background-image: url('/assets/Ancients/ShubNiggurath.png');" onclick="toggleAncientCard(this)"></div>
+        </div>
+        <div class="difficulty-container">
+            <div class="difficulty" id="dif" onclick="toggleDifficulty(this)">Низкая</div>
+            <div class="difficulty" id="dif" onclick="toggleDifficulty(this)">Средняя</div>
+            <div class="difficulty" id="dif" onclick="toggleDifficulty(this)">Высокая</div>
+        </div>
+        <div class="deck-container">Замешать колоду</div>
+    </div>
+    <script src="/main.js"></script>
 </body>
 </html>
