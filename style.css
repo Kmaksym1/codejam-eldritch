@@ -77,6 +77,32 @@ color:purple;
 min-width:24.5%;
 text-align:center;
 }
+.two-dec-container{
+    display: none;
+    
+}
+.backCard{
+background-position:50%;
+background: url('./assets/mythicCardBackground.png');
+background-repeat:no-repeat;
+background-size:contain;
+box-sizing:border-box;
+cursor:pointer;
+height:250px;
+width:200px
+}
+.flipedCard{
+display: none;
+/* background: none; */
+background-position:50%;
+background-repeat:no-repeat;
+background-size:contain;
+box-sizing:border-box;
+cursor:pointer;
+height:250px;
+width:200px
+}
+
 
 /*********                  Медиа запросы                     **********/
     @media (max-width: 1020px){

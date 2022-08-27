@@ -1,4 +1,3 @@
-
 const ancientCardList = document.querySelectorAll('.ancient-card');
 const difficultyContainer = document.querySelector('.difficulty-container');
 let toggleAncientCard = function (item) {
@@ -16,6 +15,15 @@ let toggleDifficulty = function (it) {
         deckContainer.style.display= "flex";
     });
     it.classList.add('difficulty-active');
-}
-
-
+};
+const backDeck = document.querySelector('.two-dec-container'); 
+const runDeck = document.querySelector('.deck-container');
+runDeck.addEventListener('click', ()=>{
+    runDeck.style.display= "none";
+    backDeck.style.display = 'flex'
+});
+const flipedDeck = document.querySelector('.flipedCard');
+const backCard = document.querySelector('.backCard'); 
+backCard.addEventListener('click', ()=>{
+    flipedDeck.style.display = 'flex';
+});
