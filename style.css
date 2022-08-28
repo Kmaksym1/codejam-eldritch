@@ -39,11 +39,13 @@ background-size:contain;
 box-sizing:border-box;
 cursor:pointer;
 height:290px;
-width:230px
+width:230px;
+color: rgba(0, 0, 0, 0);
 }
 .ancient-card-after{
 border:2px solid red;
 transition: 0.7s;
+
 }
 /*********                  Сложность                     **********/
 .difficulty-container{
