@@ -105,7 +105,7 @@ const greenCardsData = [
   },
   {
     id: 'green18',
-    cardFace: '../assets/MythicCards/green/green19.png',
+    cardFace: '../assets/MythicCards/green/green18.png',
     difficulty: 'easy',
     color:'green'
   },

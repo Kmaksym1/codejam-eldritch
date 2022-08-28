@@ -11,25 +11,49 @@
     
     <div class="app">
         <div class="ancients-container">
-            <div class="ancient-card" id="ancients1"  style="background-image: url('/assets/Ancients/Azathoth.webp');" onclick="toggleAncientCard(this)"></div>
-            <div class="ancient-card" id="ancients2" style="background-image: url('/assets/Ancients/Cthulthu.webp');" onclick="toggleAncientCard(this)"></div>
-            <div class="ancient-card" id="ancients3" style="background-image: url('/assets/Ancients/IogSothoth.webp');" onclick="toggleAncientCard(this)"></div>
-            <div class="ancient-card" id="ancients4" style="background-image: url('/assets/Ancients/ShubNiggurath.webp');" onclick="toggleAncientCard(this)"></div>
+            <div class="ancient-card" id="ancients0" value="0" style="background-image: url('/assets/Ancients/Azathoth.webp');">0</div>
+            <div class="ancient-card" id="ancients1" value="1" style="background-image: url('/assets/Ancients/Cthulthu.webp');">1</div>
+            <div class="ancient-card" id="ancients2" style="background-image: url('/assets/Ancients/IogSothoth.webp');">2</div>
+            <div class="ancient-card" id="ancients3" style="background-image: url('/assets/Ancients/ShubNiggurath.webp');">3</div>
         </div>
         <div class="difficulty-container">
-            <div class="difficulty" id="dif" onclick="toggleDifficulty(this)">Средняя</div>
-            <div class="difficulty" id="dif" onclick="toggleDifficulty(this)">Средняя</div>
-            <div class="difficulty" id="dif" onclick="toggleDifficulty(this)">Средняя</div>
+            <div class="difficulty" id="soEasy">soEasy</div>
+            <div class="difficulty" id="easy">easy</div>
+            <div class="difficulty" id="normal">normal</div>
+            <div class="difficulty" id="hard">hard</div>
+            <div class="difficulty" id="soHard">soHard</div>
         </div>
-        <div class="deck-container">Замешать колоду</div>
+        <div class="toMixDeck">Замешать колоду</div>
         <div class="two-dec-container">
             <div class="backCard"></div>
             <div class="flipedCard"></div>
         </div>
+        <div class="dots-container">
+            <div class="firstStage" >First Stage</div>
+            <div class="dot">
+                <div class="green" id="1_1">0</div>
+                <div class="brown" id="1_2">0</div>
+                <div class="blue" id="1_3">0</div>
+            </div>
+            <div class="secondStage" >Second Stage</div>
+            <div class="dot">
+                <div class="green" id="2_1">0</div>
+                <div class="brown" id="2_2">0</div>
+                <div class="blue" id="2_3">0</div>
+            </div>
+            <div class="thirdStage" >Third Stage</div>
+            <div class="dot">
+                <div class="green" id="3_1">0</div>
+                <div class="brown" id="3_2">0</div>
+                <div class="blue" id="3_3">0</div>
+            </div>
+        </div>
+        </div>
     </div>
-    <script src="js/style.js"></script>
+    <script type="module" src="js/style.js"></script>
     <script type="module" src="./js/main.js"></script>
     <script type="module" src="./data/ancients.js"></script>
+    
     
     <!-- <script type="module" src="./data/mythicCards/blue/index.js"></script> -->
 
