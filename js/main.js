@@ -48,11 +48,12 @@ stage = ancientsData[ancientNumber][st];
         firstStageColoda.push(...blueCards.splice(rundomNumber, stageKey));
     } 
     };
-    // console.log ('greenCards',greenCards)
+    console.log ('firstStageColoda',firstStageColoda)
     return firstStageColoda;
 };
 export function flipedCardddddsssss(){
     let nextCardImg = arrQeue.splice(0, 1);
+    firstStageColoda.splice(0, 1);
     let img = nextCardImg[0].cardFace.slice(1);
     return img;
 }
