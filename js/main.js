@@ -5,7 +5,7 @@ import brownCardsData from "../data/mythicCards/brown/index.js";
 import greenCardsData from "../data/mythicCards/green/index.js";
 import {ancientNumber} from './style.js';
 import {arrQeue} from './style.js';
-let firstStageColoda;
+let firstStageColoda; 
 export let stage;
 let greenCards;
 let brownCards;
@@ -26,7 +26,7 @@ stage = ancientsData[ancientNumber][st];
 } else if (level === 'hard'){
     greenCards = greenCardsData.filter((el) => el.difficulty !== 'easy');
     brownCards = brownCardsData.filter((el) => el.difficulty !== 'easy');
-    blueCards = blueCardsData.filter((obj) => !Object.values(obj).some((el) => el === 'easy'));
+    brownCards = blueCardsData.filter((el) => el.difficulty !== 'easy');
 } 
 // else if (level ==='soEasy'){
     // greenCards = 
@@ -48,14 +48,16 @@ stage = ancientsData[ancientNumber][st];
         firstStageColoda.push(...blueCards.splice(rundomNumber, stageKey));
     } 
     };
-    console.log ('firstStageColoda',firstStageColoda)
+    // console.log ('firstStageColoda',firstStageColoda)
     return firstStageColoda;
 };
 export function flipedCardddddsssss(){
     let nextCardImg = arrQeue.splice(0, 1);
-    firstStageColoda.splice(0, 1);
+    // firstStage.splice(0, 1);
+    // secondS Stage.splice(0, 1);
     let img = nextCardImg[0].cardFace.slice(1);
     return img;
+    
 }
 /*********************** RandomNumber ******************/
 function getRandomNum(arr, value) {
