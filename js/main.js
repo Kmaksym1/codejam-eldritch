@@ -4,6 +4,7 @@ import blueCardsData from "../data/mythicCards/blue/index.js";
 import brownCardsData from "../data/mythicCards/brown/index.js";
 import greenCardsData from "../data/mythicCards/green/index.js";
 import {ancientNumber} from './style.js';
+import {arrQeue} from './style.js';
 let firstStageColoda;
 export let stage;
 let greenCards;
@@ -26,12 +27,13 @@ stage = ancientsData[ancientNumber][st];
     greenCards = greenCardsData.filter((el) => el.difficulty !== 'easy');
     brownCards = brownCardsData.filter((el) => el.difficulty !== 'easy');
     blueCards = blueCardsData.filter((obj) => !Object.values(obj).some((el) => el === 'easy'));
-} else if (level ==='soEasy'){
+} 
+// else if (level ==='soEasy'){
     // greenCards = 
     // .filter((el) => el.difficulty === level)
     // return 1;
     // console.log ('soeasy',greenCards)
-    }
+//     }
     // const blueCards = blueCardsData.filter((el) => el.difficulty === level);
     for (let key in stage) {
         const stageKey = stage[key];
@@ -46,11 +48,12 @@ stage = ancientsData[ancientNumber][st];
         firstStageColoda.push(...blueCards.splice(rundomNumber, stageKey));
     } 
     };
-    // console.log ('greenCards',greenCards)
+    console.log ('firstStageColoda',firstStageColoda)
     return firstStageColoda;
 };
 export function flipedCardddddsssss(){
-    let nextCardImg = firstStageColoda.splice(0, 1);
+    let nextCardImg = arrQeue.splice(0, 1);
+    firstStageColoda.splice(0, 1);
     let img = nextCardImg[0].cardFace.slice(1);
     return img;
 }

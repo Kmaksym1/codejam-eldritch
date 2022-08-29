@@ -64,6 +64,7 @@ soHard.addEventListener('click', (e)=>{
 const backDeck = document.querySelector('.two-dec-container'); 
 const runDeck = document.querySelector('.toMixDeck');
 let trak
+export let arrQeue;
 runDeck.addEventListener('click', ()=>{
     runDeck.style.display= "none";
     backDeck.style.display = 'flex';
@@ -85,7 +86,7 @@ runDeck.addEventListener('click', ()=>{
     stThreeThree.textContent = thirdStage.filter((el) => el.color === 'blue').length;
 }
 
-    const arrQeue = firstStage.concat(secondStage, thirdStage);
+    arrQeue = firstStage.concat(secondStage, thirdStage);
     //почитать диструктуризация
     // console.log ('koloda 16 el',[...firstStage,...secondStage,...thirdStage])
     // console.log ('getActiveBt',getActiveBt ())
