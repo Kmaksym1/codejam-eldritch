@@ -52,13 +52,13 @@ height:300px;
 width:240px;
 }
 #ancients0{
-background-image: url('assets/ancients/azathoth.webp');
+background-image: url('assets/ancients/azathoth.png');
 }
 #ancients1{
-background-image: url('/assets/ancients/cthulthu.webp');
+background-image: url('/assets/ancients/cthulthu.png');
 }
 #ancients2{
-background-image: url('./assets/ancients/iogsothoth.webp');
+background-image: url('./assets/ancients/iogsothoth.png');
 }
 #ancients3{
 background-image: url('../assets/ancients/shubniggurath.png');
