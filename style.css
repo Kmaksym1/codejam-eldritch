@@ -56,17 +56,17 @@ border-style: inset;
     border-radius: 8px;
 }
 #ancients1{
-background-image: url('./assets/ancients/cthulthu.webp');
+background-image: url('/assets/ancients/cthulthu.webp');
 border-style: inset;
     border-radius: 8px;
 }
 #ancients2{
-background-image: url('../assets/ancients/iogSothoth.webp');
+background-image: url('./assets/ancients/iogSothoth.webp');
 border-style: inset;
     border-radius: 8px;
 }
 #ancients3{
-background-image: url('assets/Ancients/shubniggurath.webp');
+background-image: url('../assets/Ancients/shubniggurath.webp');
 border-style: inset;
     border-radius: 8px;
 }
