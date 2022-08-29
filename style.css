@@ -51,7 +51,7 @@ height:300px;
 width:240px;
 }
 #ancients0{
-background-image: url('./assets/ancients/Azathoth.webp');
+background-image: url('assets/ancients/Azathoth.webp');
 border-style: inset;
     border-radius: 8px;
 }
