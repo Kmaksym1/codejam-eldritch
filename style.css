@@ -33,7 +33,7 @@ min-width:50%;
 padding:20px;
 }
 .ancient-card{
-    background-image: url('./assets/Ancients/Cthulthu.webp');
+background-image: url('./assets/Ancients/Cthulthu.webp');
 background-position:50%;
 background-repeat:no-repeat;
 background-size:contain;
@@ -52,25 +52,16 @@ height:300px;
 width:240px;
 }
 #ancients0{
-background-image: url('../assets/ancients/azathoth.webp');
-border-style: inset;
-    border-radius: 8px;
-
+background-image: url('assets/ancients/azathoth.webp');
 }
 #ancients1{
-background-image: url('../assets/ancients/cthulthu.webp');
-border-style: inset;
-    border-radius: 8px;
+background-image: url('/assets/ancients/cthulthu.webp');
 }
 #ancients2{
-background-image: url('../assets/ancients/iogsothoth.webp');
-border-style: inset;
-    border-radius: 8px;
+background-image: url('./assets/ancients/iogsothoth.webp');
 }
 #ancients3{
-background-image: url('../assets/ancients/shubniggurath.webp');
-border-style: inset;
-    border-radius: 8px;
+background-image: url('../assets/ancients/shubniggurath.png');
 }
 /*********                  Сложность                     **********/
 .difficulty-container{
