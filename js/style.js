@@ -63,16 +63,31 @@ soHard.addEventListener('click', (e)=>{
 
 const backDeck = document.querySelector('.two-dec-container'); 
 const runDeck = document.querySelector('.toMixDeck');
-let trak
+
 export let arrQeue;
+let firstStage;
+let secondStage;
+let thirdStage;
+let trak;
 runDeck.addEventListener('click', ()=>{
     runDeck.style.display= "none";
     backDeck.style.display = 'flex';
     const actBt = getActiveBt ();
-    const firstStage = zames(actBt.textContent, 'firstStage');
-    const secondStage = zames(actBt.textContent, 'secondStage');
-    const thirdStage = zames(actBt.textContent, 'thirdStage');
-    trak = function traker (){
+    firstStage = zames(actBt.textContent, 'firstStage');
+    secondStage = zames(actBt.textContent, 'secondStage');
+    thirdStage = zames(actBt.textContent, 'thirdStage');
+    arrQeue = firstStage.concat(secondStage, thirdStage);
+    
+    //почитать диструктуризация
+    // console.log ('koloda 16 el',[...firstStage,...secondStage,...thirdStage])
+    // console.log ('getActiveBt',getActiveBt ())
+console.log('1', firstStage)
+console.log('2', secondStage)
+console.log('3', thirdStage)    
+traker ()
+    console.log ("trak", trak)
+});
+function traker (){
     stOneOne.textContent = firstStage.filter((el) => el.color === 'green').length;
     stOneTwo.textContent = firstStage.filter((el) => el.color === 'brown').length;
     stOneThree.textContent = firstStage.filter((el) => el.color === 'blue').length;
@@ -86,24 +101,27 @@ runDeck.addEventListener('click', ()=>{
     stThreeThree.textContent = thirdStage.filter((el) => el.color === 'blue').length;
 }
 
-    arrQeue = firstStage.concat(secondStage, thirdStage);
-    //почитать диструктуризация
-    // console.log ('koloda 16 el',[...firstStage,...secondStage,...thirdStage])
-    // console.log ('getActiveBt',getActiveBt ())
-    console.log('1', firstStage)
-    console.log('2', secondStage)
-    console.log('3', thirdStage)
-    console.log('koloda 16 el',arrQeue)
-trak()
-});
-
 const flipedCard = document.querySelector('.flipedCard');
 const backCard = document.querySelector('.backCard'); 
 backCard.addEventListener('click', ()=>{
 flipedCard.style.display = 'flex';
 const img = flipedCardddddsssss();
 flipedCard.style.background = `url(${img})`;
-trak()
+let firstStageCopy = [...firstStage];
+let secondStageCopy = [...secondStage];
+// let thirdStageCopy = [...thirdStage];
+firstStage.splice(0, 1);
+if (!firstStageCopy.length){
+    secondStage.splice(0, 1);
+}
+if (!secondStageCopy.length){
+    thirdStage.splice(0, 1);
+}
+// if (!thirdStageCopy.length){
+//     backCard.addEventListener('click', ()=>{
+//     backDeck.style.display = 'none'})
+// }
+traker ()
 });
 
 ancientOne.addEventListener('click', (e)=>{
