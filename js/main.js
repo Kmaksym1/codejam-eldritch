@@ -57,11 +57,11 @@ export function flipedCardddddsssss(){
     // secondS Stage.splice(0, 1);
     let img = nextCardImg[0].cardFace.slice(1);
     return img;
-    
+
 }
 /*********************** RandomNumber ******************/
 function getRandomNum(arr, value) {
 const randomNum = Math.floor(Math.random() * (arr.length - 1)) + 1;
-return (randomNum + value) < (arr.length - 1) ? 0 : randomNum
+return (randomNum + value) > (arr.length - 1) ? 0 : randomNum
 }
 
