@@ -63,6 +63,7 @@ soHard.addEventListener('click', (e)=>{
 
 const backDeck = document.querySelector('.two-dec-container'); 
 const runDeck = document.querySelector('.toMixDeck');
+const dotsContainer = document.querySelector('.dots-container')
 
 export let arrQeue;
 let firstStage;
@@ -72,6 +73,7 @@ let trak;
 runDeck.addEventListener('click', ()=>{
     runDeck.style.display= "none";
     backDeck.style.display = 'flex';
+    dotsContainer.style.display = 'flex';
     const actBt = getActiveBt ();
     firstStage = zames(actBt.textContent, 'firstStage');
     secondStage = zames(actBt.textContent, 'secondStage');
@@ -116,6 +118,9 @@ if (!firstStageCopy.length){
 }
 if (!secondStageCopy.length){
     thirdStage.splice(0, 1);
+}
+if (thirdStage.length === 0){
+    backCard.style.display = 'none'
 }
 // if (!thirdStageCopy.length){
 //     backCard.addEventListener('click', ()=>{

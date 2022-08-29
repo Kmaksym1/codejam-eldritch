@@ -47,16 +47,16 @@ border:2px solid red;
 transition: 0.7s;
 }
 #ancients0{
-background-image: url('./assets/ancients/azathoth.webp');
+background-image: url('../assets/ancients/azathoth.webp');
 }
 #ancients1{
-background-image: url('./assets/ancients/cthulthu.webp');
+background-image: url('../assets/ancients/cthulthu.webp');
 }
 #ancients2{
-background-image: url('./assets/ancients/iogSothoth.webp');
+background-image: url('../assets/ancients/iogSothoth.webp');
 }
 #ancients3{
-background-image: url('./assets/ancients/shubNiggurath.webp');
+background-image: url('../assets/ancients/shubNiggurath.webp');
 }
 /*********                  Сложность                     **********/
 .difficulty-container{
@@ -120,7 +120,7 @@ width:180px
 .dots-container{
     border-style: double;
     align-items:center;
-    display:flex;
+    display:none;
     gap:2px;
     flex-direction: column;
     background-color: rgba(179, 179, 179, 0.247);
