@@ -19,6 +19,7 @@ const stThreeTwo = document.getElementById('3_2')
 const stThreeThree = document.getElementById('3_3')
 //матрица
 export let ancientNumber
+
 function toggleAncientCard (item) {
     ancientCardList.forEach(el => {
         el.classList.remove('ancient-card-after');
@@ -102,7 +103,7 @@ function traker (){
     stThreeTwo.textContent = thirdStage.filter((el) => el.color === 'brown').length;
     stThreeThree.textContent = thirdStage.filter((el) => el.color === 'blue').length;
 }
-
+const reLoad = document.querySelector('.reLoad')
 const flipedCard = document.querySelector('.flipedCard');
 const backCard = document.querySelector('.backCard'); 
 backCard.addEventListener('click', ()=>{
@@ -120,15 +121,12 @@ if (!secondStageCopy.length){
     thirdStage.splice(0, 1);
 }
 if (thirdStage.length === 0){
-    backCard.style.display = 'none'
+    backCard.style.display = 'none';
+    reLoad.style.display = 'block';
+    dotsContainer.style.display = 'none';
 }
-// if (!thirdStageCopy.length){
-//     backCard.addEventListener('click', ()=>{
-//     backDeck.style.display = 'none'})
-// }
 traker ()
 });
-
 ancientOne.addEventListener('click', (e)=>{
     toggleAncientCard(e.currentTarget);
 })
@@ -148,3 +146,7 @@ function getActiveBt (){
 function getAncientBt (){
     return document.querySelector('.ancient-card-after')
 }
+reLoad.addEventListener('click', ()=>{
+    location. reload()
+})
+
