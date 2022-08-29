@@ -1,0 +1,186 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    }
+    
+body {
+min-width: 480px;
+min-height: 100vh;
+font-family: 'Arial', sans-serif;
+font-size: 16px;
+color: #fff;
+width: 100%;
+text-align: center;
+background: url("./assets/map.jpg") center/cover, rgba(0, 0, 0, 0.5);
+background-blend-mode: multiply;
+}
+.app{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+/*********                  карты Древнего                     **********/
+.ancients-container{
+display:flex;
+min-width: 600px;
+justify-content: center;
+
+/* flex-wrap:wrap; */
+gap:20px;
+min-width:50%;
+padding:20px;
+}
+.ancient-card{
+background-image: url('./assets/Ancients/Cthulthu.webp');
+background-position:50%;
+background-repeat:no-repeat;
+background-size:contain;
+background-color: rgba(244, 107, 44, 0.47);
+box-sizing:border-box;
+cursor:pointer;
+height:290px;
+width:230px;
+color: rgba(77, 77, 77, 0);
+border: rgb(255, 171, 171);
+}
+.ancient-card-after{
+border:3px solid rgb(163, 37, 37);
+transition: 0.7s;
+height:300px;
+width:240px;
+}
+#ancients0{
+background-image: url('assets/ancients/Azathoth.webp');
+}
+#ancients1{
+background-image: url('/assets/ancients/cthulthu.webp');
+}
+#ancients2{
+background-image: url('./assets/ancients/iogSothoth.webp');
+}
+#ancients3{
+background-image: url('../assets/ancients/shubniggurath.png');
+}
+/*********                  Сложность                     **********/
+.difficulty-container{
+    display:none;
+    gap:20px;
+    justify-content:center
+}
+.difficulty{
+border:2px solid rgb(122, 128, 0);
+box-sizing:border-box;
+background-color: rgb(211, 197, 180);
+color:purple;
+cursor:pointer;
+padding:5px;
+text-align:center;
+width: 80px;
+}
+.difficulty-active{
+background-color:rgb(98, 90, 90);
+}
+.toMixDeck{
+border:2px solid rgb(122, 128, 0);
+box-sizing:border-box;
+display: none;
+justify-content:center;
+padding: 10px;
+background-color: rgb(211, 197, 180);
+width: 100px;
+align-items:center;
+color:purple;
+min-width:24.5%;
+text-align:center;
+}
+.two-dec-container{
+    display: none;
+}
+.backCard{
+background-position:50%;
+background: url('./assets/mythicCardBackground.png');
+background-repeat:no-repeat;
+background-size:contain;
+box-sizing:border-box;
+cursor:pointer;
+height:250px;
+width:220px;
+}
+.flipedCard{
+display: none;
+background-size: cover;
+/* background: none; */
+background-position:50%;
+background-repeat:no-repeat;
+background-size:contain;
+box-sizing:border-box;
+cursor:pointer;
+height:250px;
+width:180px
+}
+/*********                  tracker container                     **********/
+
+.dots-container{
+    border-style: double;
+    align-items:center;
+    display:none;
+    gap:2px;
+    flex-direction: column;
+    background-color: rgba(179, 179, 179, 0.247);
+    border-color: rgba(3, 3, 3, 0.743);
+    padding: 8px;
+}
+
+.dot{
+    align-items:center;
+    border-radius:20%;
+    display:flex;
+    justify-content:center;
+    width: 100px;
+    height:40px;
+    gap: 20px;
+    color: rgb(0, 0, 0);
+    
+}
+.green{
+    background-color:rgb(139, 233, 115);
+    border-radius:40%;
+    width: 30px;
+    border-style: inset;
+    border-color: rgb(229, 247, 125);
+    border-top: 2px;
+    border-left: 2px;
+}
+.brown{
+    background-color: rgb(180, 154, 72);
+    border-radius:40%;
+    width: 30px;
+    border-style: inset;
+    border-color: rgb(229, 247, 125);
+    border-top: 2px;
+    border-left: 2px;
+}
+.blue{
+    background-color: rgb(102, 194, 225);
+    border-radius:40%;
+    width: 30px;
+    border-style: inset;
+    border-color: rgb(229, 247, 125);
+    border-top: 2px;
+    border-left: 2px;
+}
+
+
+/*********                  Медиа запросы                     **********/
+    @media (max-width: 1020px){
+        .ancient-card{
+            height:220px;
+            width:160px}
+    }
+    @media (max-width: 740px){
+        .ancient-card{
+            height:160px;
+            width:100px}
+    }
